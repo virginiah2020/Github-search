@@ -17,6 +17,7 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    SearchComponent
     
   ],
   providers: [],

@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SearchService {
+export class  SearchService{
 
   constructor() { }
 }

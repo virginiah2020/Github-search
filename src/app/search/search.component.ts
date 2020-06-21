@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { User } from '../user';
 @Component({
   selector: 'app-search',
@@ -6,6 +7,10 @@ import { User } from '../user';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+ 
+  profile:any;
+  repos:any;
+  username:string;
 
   constructor() { }
 

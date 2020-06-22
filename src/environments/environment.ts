@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  clientid :"9cf258b6c15ba468ae60" ,
+  clientid :"327f997ddc644ace9ad998d74ce756317ea296c8" ,
   clientsecret : "b96aea5130b1946f4bfaefc5432dd16619660dbb",
   
 };

@@ -44,7 +44,7 @@
                     </li>
                     
                     <li class="list-group-item">
-                        <strong>Member Since : </strong>{{ profile.created_at|timeAgo }}
+                        <strong>Member Since : </strong>{{ profile.created_at|date }}
                       
                       <strong>Joined on : </strong>{{ profile.created_at|date }}
                     </li>
@@ -63,7 +63,7 @@
                   <div class="card-body">
                     <h4 class="card-title bg-warning text-center">{{repo.name}}</h4>
                     <p class="card-text">{{repo.description}}</p>
-                    <p class="card-text "> <span class="badge badge-secondary m-2">Created: {{repo.created_at | timeAgo}} </span> 
+                    <p class="card-text "> <span class="badge badge-secondary m-2">Created: {{repo.created_at | date}} </span> 
                        <span class="badge badge-secondary n-2">On : {{repo.created_at | date}}</span></p>
                     <p ></p>
                     

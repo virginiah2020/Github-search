@@ -8,13 +8,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import{HttpClientModule} from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DateFormatPipe } from './date-format.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ProfileComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    DateFormatPipe
   ],
   imports: [
     BrowserModule,

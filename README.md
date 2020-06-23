@@ -1,6 +1,19 @@
 # Gitsearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+This is an App that enables one to search any Github user and see what there have been working on this project was generated with angular 8
+
+## contributor
+
+Virginiah Wamuyu
+
+## Technologies Used
+HTMl
+Css
+Bootstrap
+Angular
+
+## live site link
+
 
 ## Development server
 

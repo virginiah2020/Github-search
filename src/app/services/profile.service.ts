@@ -13,11 +13,11 @@ export class ProfileService {
     this.username="virginiah2020";
    }
    getProfileInfo(){
-    return this.http.get("https://api.github.com/users/virginiah2020" + this.username + "?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
+    return this.http.get("https://api.github.com/users/" + this.username + "?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
   }
 
   findRepository(){
-    return this.http.get("https://api.github.com/users/virginiah2020" + this.username + "/repos?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
+    return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
   }
 
   updateProfile(username:string){

@@ -8,21 +8,28 @@ import {environment } from '../../environments/environment';
 export class ProfileService {
   private username:string;
   private clientid = environment.clientid;
-  private clientsecret =environment.clientsecret;
   constructor(private http:HttpClient) {
     this.username="virginiah2020";
    }
    getProfileInfo(){
-    return this.http.get("https://api.github.com/users/" + this.username + "?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
+    return this.http.get("https://api.github.com/users/virginiah2020?access_token"+this.clientid )
   }
 
   findRepository(){
-    return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id="+ this.clientid + "&client_secret=" + this.clientsecret)
+    return this.http.get("https://api.github.com/users/virginiah2020/repos?access_token"+this.clientid)
   }
 
   updateProfile(username:string){
     this.username = username;
+    return this.http.get("https://api.github.com/users/"+this.username+"?access_token"+this.clientid )
   }
 
+  updateRepository(username:string){
+    this.username = username;
+    return this.http.get("https://api.github.com/users/"+this.username+"/repos?access_token"+this.clientid )
+  }
+  }
+
+
   
-}
+

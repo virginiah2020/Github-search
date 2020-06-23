@@ -26,13 +26,14 @@ export class ProfileComponent implements OnInit {
   }
    
   getProfile(){
-    this.profileService.updateProfile(this.username);
-    this.profileService.getProfileInfo().subscribe(profile => {
+    console.log(this.username);
+    this.profileService.updateProfile(this.username).subscribe(profile => {
       console.log(profile);
       this.profile = profile;
     });
+   
   
-    this.profileService.findRepository().subscribe(repos => {
+    this.profileService.updateRepository(this.username).subscribe(repos => {
       console.log(repos);
       this.repos = repos;
     })
